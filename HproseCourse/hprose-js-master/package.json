@@ -1,0 +1,80 @@
+{
+  "name": "hprose-js",
+  "version": "2.0.31",
+  "description": "Hprose is a High Performance Remote Object Service Engine.",
+  "homepage": "https://github.com/hprose/hprose-js",
+  "keywords": [
+    "hprose",
+    "rpc",
+    "webservice",
+    "websocket",
+    "http",
+    "ajax",
+    "json",
+    "jsonrpc",
+    "cross-language",
+    "cross-platform",
+    "cross-domain",
+    "html5",
+    "serialize",
+    "serialization",
+    "protocol",
+    "web",
+    "service",
+    "framework",
+    "library",
+    "game",
+    "communication",
+    "middleware",
+    "webapi",
+    "async",
+    "batch",
+    "multicall",
+    "future",
+    "promise",
+    "comet",
+    "push",
+    "pub-sub",
+    "publish",
+    "subscribe",
+    "idempotent",
+    "oneway",
+    "promises-aplus"
+  ],
+  "author": {
+    "name": "Ma Bingyao",
+    "email": "andot@hprose.com",
+    "url": "http://hprose.com/"
+  },
+  "directories": {
+    "lib": "dist/"
+  },
+  "main": "dist/hprose.src.js",
+  "devDependencies": {
+    "promises-aplus-tests": "*"
+  },
+  "scripts": {
+    "aplus-tests": "promises-aplus-tests dist/hprose.js"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hprose/hprose-js.git"
+  },
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/hprose/hprose-js.git",
+    "basePath": "dist/",
+    "files": [
+      "hprose.src.js",
+      "FlashHttpRequest.swf"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/hprose/hprose-js/issues",
+    "email": "andot@hprose.com"
+  },
+  "license" : "MIT"
+}

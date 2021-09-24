@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hprose websocket client test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="hprose.js"></script>
+  </head>
+  <body>
+    <script>
+    var client = hprose.Client.create('http://127.0.0.1:8080/hprose/service', ['sayHello','testHello']);
+    client.ready(function(stub) {
+        // stub.hello.idempotent = true;
+        stub.sayHello('中国🇨🇳')
+        .then(function(result) {
+            console.info(result);
+        },function(e) {
+            console.error(e);
+        });
+        stub.testHello('你好')
+        .then(function(result) {
+            console.info(result);
+        },function(e) {
+            console.error(e);
+        });
+        // client.batch.begin();
+        // stub.hello('World 1')
+        // .then(function(result) {
+        //     console.info(result);
+        // });
+        // stub.hello('World 2')
+        // .then(function(result) {
+        //     console.info(result);
+        // });
+        // stub.hello('World 3')
+        // .then(function(result) {
+        //     console.info(result);
+        // });
+        // client.batch.end();
+    },
+    function(e) {
+        console.error(e);
+    });
+    </script>
+  </body>
+</html>
