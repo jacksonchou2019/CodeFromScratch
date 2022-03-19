@@ -1,0 +1,20 @@
+{
+  "name": "n1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.54.0",
+    "@aws-sdk/client-opensearch": "^3.53.0",
+    "@aws-sdk/credential-provider-node": "^3.54.0",
+    "@aws-sdk/node-http-handler": "^3.54.0",
+    "@aws-sdk/protocol-http": "^3.54.0",
+    "@aws-sdk/signature-v4": "^3.54.0",
+    "@opensearch-project/opensearch": "^1.0.2"
+  }
+}
